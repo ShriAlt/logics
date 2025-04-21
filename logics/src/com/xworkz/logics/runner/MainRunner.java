@@ -9,6 +9,6 @@ public class MainRunner {
 //        armstrongNumber.isNumberIsArmstrong(3);
         System.out.printf("number is armstrong :"+armstrongNumber.isNumberIsArmstrong(153));
         PrimeNumber primeNumber=new PrimeNumber();
-        System.out.println("is prime"+primeNumber.isPrimeNumber(3));
+        System.out.println("is prime"+primeNumber.isPrimeNumber(4));
     }
 }
