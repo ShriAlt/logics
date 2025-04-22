@@ -1,13 +1,18 @@
 package com.xworkz.ani.runner;
 
-import com.xworkz.ani.external.ConnectUser;
-import com.xworkz.ani.internal.Connector;
-import com.xworkz.ani.internal.ConnectorImpl;
+
+import com.xworkz.ani.external.*;
+
+import com.xworkz.ani.internal.*;
 
 public class ConnectorRunner {
     public static void main(String[] args) {
-        Connector connector=new ConnectorImpl();
-        ConnectUser connectUser=new ConnectUser(connector);
+        Connector connector = new ConnectorImpl();
+        ConnectUser connectUser = new ConnectUser(connector);
         connectUser.execute();
+        ICC icc = new IndianCriketTeamImpl();
+        BCCI bcci = new BCCI();
+        bcci.setIcc(icc);
+        bcci.execute();
     }
 }
