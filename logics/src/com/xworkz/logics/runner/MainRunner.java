@@ -3,7 +3,6 @@ package com.xworkz.logics.runner;
 import com.xworkz.logics.internal.ArmstrongNumber;
 import com.xworkz.logics.internal.PrimeNumber;
 import com.xworkz.logics.internal.Sort;
-import sun.plugin.javascript.navig.Array;
 
 import java.util.Arrays;
 
@@ -16,7 +15,7 @@ public class MainRunner {
         System.out.println("is prime"+primeNumber.isPrimeNumber(4));
         Sort sort=new Sort();
         int[] num={1,2,3,4,5,6,7,8,9,10};
-        int[] result=sort.decendingArray(num);
+        int[] result=sort.descendingArray(num);
         System.out.println("array"+ Arrays.toString(result));
     }
 }
