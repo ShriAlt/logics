@@ -11,8 +11,13 @@ public class ConnectorRunner {
         ConnectUser connectUser = new ConnectUser(connector);
         connectUser.execute();
         ICC icc = new IndianCriketTeamImpl();
-        BCCI bcci = new BCCI();
-        bcci.setIcc(icc);
+        BCCI bcci = new BCCI(icc);
+
         bcci.execute();
+        Laptop laptop =new LaptopImpl();
+        Asus asus=new Asus(laptop);
+        asus.execute();
+
+
     }
 }
